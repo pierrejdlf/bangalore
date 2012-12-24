@@ -1,0 +1,131 @@
+#bang_all {
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 1.2em;
+}
+	
+/* TEXT ON TOP */
+#bang_intro {
+	margin-bottom:10px;
+	text-align: center;	
+}
+
+#bang_boss {
+	width:700px;
+}
+
+/* HELP W KEY AT BEGINNING */
+#bang_overlay_help {
+	position:absolute;
+	width:250px;
+	height:466px;
+	left:225px;
+	top:49%;
+	text-align:center;
+	z-index:9999;
+	pointer-events:none;}
+#bang_overlay_help div {
+	background:black;
+	color:white;
+	opacity:1;
+	padding:10px;
+	font-size:0.9em;
+	-moz-border-radius:	17px;
+	border-radius:		17px;}
+
+
+
+#bang_container {
+	border:1px solid gray;
+	width:700px;
+	height:466px;
+	overflow:hidden;
+	position:relative;
+}
+#bang_container #bang_inthere {
+	position:relative;}
+#bang_theimg {
+	max-width:none;}
+
+
+
+/* OVERLAY NAVIGATION LEFT RIGHT */
+#bang_container #bang_overlay {
+	position:absolute;
+	width:700px;
+	height:466px;
+	z-index:300;
+}
+#bang_container #bang_overlay div {
+	background:black;
+	position:absolute;
+	width:50%;
+	height:100%;
+	opacity:0.2;
+}
+#bang_container #bang_overlay #bang_leftB {left:0;}
+#bang_container #bang_overlay #bang_rightB {left:50%;}
+
+
+
+/* OVERLAY GRAPH */
+#bang_container #bang_overlay_graph {
+	position:absolute;
+	width:700px;
+	height:466px;
+	background: rgba(0, 0, 0, 0.2);
+	z-index:300;
+	pointer-events:none;}
+#bang_container #bang_overlay_graph #bang_sigmadiv {
+	margin:50px;
+	width:600px;
+	height:366px;
+	overflow:visible;
+	z-index:350;}
+
+
+
+/* OVERLAY MAP */
+#bang_container #bang_overlay_map {
+	position:absolute;
+	width:700px;
+	height:466px;
+	z-index:280;
+	pointer-events:none;}
+
+
+
+/* NAVIGATION TEXT */
+#bang_container #bang_overlay_txt {
+	position:absolute;
+	width:700px;
+	height:466px;
+	z-index:990;
+	pointer-events:none;}
+#bang_container #bang_overlay_txt div {
+	position:absolute;
+	width:50%;
+	height:100%;
+	text-align:center;
+	z-index:999;}
+#bang_container #bang_overlay_txt #bang_leftT {left:0;}
+#bang_container #bang_overlay_txt #bang_rightT {left:50%;}
+#bang_container #bang_overlay_txt div span {
+	position:absolute;
+	background:black;
+	color:white;
+	width:330px;
+	left:0;
+	bottom:0;
+	z-index:800;
+	padding:10px;
+	font-size:0.9em;
+	opacity:0;}
+
+
+/* RESULT concatenation TEXT */
+#bang_result {
+	padding:20px;
+	text-align:center;
+	color:gray;
+	//font-size:1.3em;
+}

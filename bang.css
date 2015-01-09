@@ -1,6 +1,7 @@
 #bang_all {
 	font-family: 'Averia Serif Libre', cursive;
-	font-size: 1.2em;
+	font-size: 1em;
+	text-align: center;
 }
 	
 /* TEXT ON TOP */
@@ -10,7 +11,21 @@
 }
 
 #bang_boss {
+	position: absolute;
 	width:700px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%); 
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+canvas { /* hack to reposition sigma graph */
+	-webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%); 
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 /* HELP W KEY AT BEGINNING */
@@ -42,9 +57,11 @@
 	position:relative;
 }
 #bang_container #bang_inthere {
-	position:relative;}
+	position:relative;
+}
 #bang_theimg {
-	max-width:none;}
+	max-width:none;
+}
 
 
 

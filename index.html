@@ -1,40 +1,53 @@
-<link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="bang.css"/>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Poum</title>
 
-<script src="lib/jquery.1.7.2.min.js"></script>
-<script src="lib/sigma/sigma.min.js"></script>
-<script src="lib/sigma/sigma.parseGexf.js"></script>
-<script type="text/javascript" src="bang.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script type="text/javascript">
+		<link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="bang.css"/>
 
-	var IMGPATH = "images/";
-	var DATAPATH = "data.csv"; // $.get() does not work with .json !?
-	var GRAPHPATH = "graph.gexf";
-	init_bang(IMGPATH,DATAPATH,GRAPHPATH);
+		<script src="lib/jquery.1.7.2.min.js"></script>
+		<script src="lib/sigma/sigma.min.js"></script>
+		<script src="lib/sigma/sigma.parseGexf.js"></script>
+		<script type="text/javascript" src="bang.js"></script>
+
+</head>
+<body>
+
+	<div id="bang_all">
+		<div id="bang_intro">
+			j'ai trouvÃ© sur le chemin toute une sÃ©rie de trÃ©sors, et je les ai mis dans mon panier
+		</div>
+		<div id="bang_boss">
+		<div id="bang_container">
+		        <div id="bang_overlay_help"><div>press & maintain 'W' key<br/>to see where you are</div></div>
+			<div id="bang_overlay">
+				<div id="bang_leftB"></div>
+				<div id="bang_rightB"></div>
+			</div>
+			<div id="bang_overlay_graph"><div id="bang_sigmadiv"></div></div>
+		        <div id="bang_overlay_map"><img src="map.jpg"/></div>
+			<div id="bang_overlay_txt">
+				<div id="bang_leftT"><span></span></div>
+				<div id="bang_rightT"><span></span></div>
+			</div>
+			<div id="bang_inthere">
+				<img id="bang_theimg" width="300" src="" alt="">
+			</div>
+		</div>
+		<div id="bang_map"></div>
+		<div id="bang_result"></div>
+	</div>
+
+	<script type="text/javascript">
+		var IMGPATH = "images/";
+		var DATAPATH = "data.csv"; // $.get() does not work with .json !?
+		var GRAPHPATH = "graph.gexf";
+		init_bang(IMGPATH,DATAPATH,GRAPHPATH);
+	</script>
 	
-</script>
-
-
-<div id="bang_all">
-<div id="bang_intro">j'ai trouvé sur le chemin toute une série de trésors, et je les ai mis dans mon panier</div>
-<div id="bang_boss">
-<div id="bang_container">
-        <div id="bang_overlay_help"><div>press & maintain 'W' key<br/>to see where you are</div></div>
-	<div id="bang_overlay">
-		<div id="bang_leftB"></div>
-		<div id="bang_rightB"></div>
-	</div>
-	<div id="bang_overlay_graph"><div id="bang_sigmadiv"></div></div>
-        <div id="bang_overlay_map"><img src="map.jpg"/></div>
-	<div id="bang_overlay_txt">
-		<div id="bang_leftT"><span></span></div>
-		<div id="bang_rightT"><span></span></div>
-	</div>
-	<div id="bang_inthere">
-		<img id="bang_theimg" width="300" src="" alt="">
-	</div>
-</div>
-<div id="bang_map"></div>
-<div id="bang_result"></div>
-</div>
+</body>

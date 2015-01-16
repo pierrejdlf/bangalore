@@ -48,7 +48,7 @@ var init_bang = function(IMGPATH,DATAPATH,GRAPHPATH) {
 		
 		// result txt
 		var allresult = $('#bang_result').html();
-		if(normal) $('#bang_result').html(allresult + currentImage[where+'txt'] + "<br/>");
+		if(normal) $('#bang_result').html(allresult + currentImage[where+'txt'] + ", ");
 		
 		// go to next image
 		var oldId = curId;

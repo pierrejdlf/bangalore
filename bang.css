@@ -1,3 +1,7 @@
+body {
+	background: black;
+}
+
 #bang_all {
 	font-family: 'Averia Serif Libre', cursive;
 	font-size: 1em;
@@ -6,8 +10,9 @@
 	
 /* TEXT ON TOP */
 #bang_intro {
-	margin-bottom:10px;
-	text-align: center;	
+	margin:20px;
+	text-align: center;
+	color: white;
 }
 
 #bang_boss {
@@ -141,8 +146,8 @@ canvas { /* hack to reposition sigma graph */
 
 /* RESULT concatenation TEXT */
 #bang_result {
+	line-height: 140%;
 	padding:20px;
 	text-align:center;
 	color:gray;
-	//font-size:1.3em;
 }
